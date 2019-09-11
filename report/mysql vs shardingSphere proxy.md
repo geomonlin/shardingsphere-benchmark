@@ -2,7 +2,7 @@
 
 
 
-![select_single_raw](D:\git\shardingsphere-benchmark\report\sp_raw\select_single_raw.png)
+![select_single_raw](https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/select_single_raw.png)
 
 ```
 Comparative Version:
@@ -12,7 +12,7 @@ Table Number: single
 Comparative type: SELECT
 ```
 
-![update_single_raw](D:\git\shardingsphere-benchmark\report\sp_raw\update_single_raw.png)
+![update_single_raw](https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/update_single_raw.png)
 
 ```
 Comparative Version:
@@ -32,7 +32,7 @@ Table Number: single
 Comparative type: DELETE
 ```
 
-![insert_single_raw](D:\git\shardingsphere-benchmark\report\sp_raw\insert_single_raw.png)
+![insert_single_raw](https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/insert_single_raw.png)
 
 ```
 Comparative Version:

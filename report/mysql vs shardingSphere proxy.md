@@ -1,4 +1,4 @@
-![1568176044576](C:\Users\linzesi\AppData\Roaming\Typora\typora-user-images\1568176044576.png)
+![1568176044576](https://github.com/geomonlin/codeTest/blob/master/images/mysql%20vs%20proxy.png)
 
 
 

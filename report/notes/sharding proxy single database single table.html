@@ -4,7 +4,7 @@
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <title>sharding proxy single database single table</title></head>
 <body><p><em>The manual schema initial script is in <a href='https://github.com/apache/incubator-shardingsphere-example/blob/dev/src/resources/manual_schema.sql' target='_blank' class='url'>https://github.com/apache/incubator-shardingsphere-example/blob/dev/src/resources/manual_schema.sql</a>, please understand the table structure before you first look the example.</em></p>
-<p>&nbsp;</p>
+<p><img src='../scenario_1/select_single.png' alt='insert_single' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
@@ -16,7 +16,7 @@ Axis:
 Comparative Mode: SingleDataBase And SingleTable(sql example:SELECT o.order_id FROM   t_order o WHERE order_id = # AND user_id = #)
 Comparative type: SELECT
 </code></pre>
-<p>&nbsp;</p>
+<p><img src='../scenario_1/update_single.png' alt='update_single' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
@@ -28,7 +28,7 @@ Axis:
 Comparative Mode: SingleDataBase And SingleTable(sql example:UPDATE t_order o SET o.status = # WHERE o.order_id = # AND o.user_id = #)
 Comparative type: UPDATE
 </code></pre>
-<p>&nbsp;</p>
+<p><img src='../scenario_1/delete_single.png' alt='delete_single' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
@@ -40,8 +40,7 @@ Axis:
 Comparative Mode: SingleDataBase And SingleTable(sql example:DELETE FROM t_order o WHERE o.order = # AND o.user_id = #)
 Comparative type: DELETE
 </code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p><img src='../scenario_1/insert_single.png' alt='insert_single' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
@@ -50,7 +49,7 @@ Data Volume: 200w
 Axis:
 	X: (TEST TIMES)/DAY
 	Y: TPS
-Comparative Mode: SingleDataBase And SingleTable(INSERT INTO t_order(user_id,status) VALUES(#,#))
+Comparative Mode: SingleDataBase And SingleTable(sql example:INSERT INTO t_order(user_id,status) VALUES(#,#))
 Comparative type: INSERT
 </code></pre>
 <p>&nbsp;</p>

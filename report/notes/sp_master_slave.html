@@ -3,36 +3,52 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <title>sp_master_slave</title></head>
-<body><p><img src='https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
+<body><p><img src='../sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: single
-Comparative Mode: Only MaterSlave
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: Only MaterSlave(sql example:SELECT o.order_id FROM  t_order o WHERE order_id = 1)
 Comparative type: SELECT
 </code></pre>
-<p><img src='https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
+<p><img src='../sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: single
-Comparative Mode: Only MaterSlave
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: Only MaterSlave(sql example:UPDATE t_order o SET o.status = # WHERE o.order_id = #)
 Comparative type: UPDATE
 </code></pre>
-<p><img src='https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
+<p><img src='../sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: single
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
 Comparative Mode: Only MaterSlave
-Comparative type: DELETE
+Comparative type: DELETE(sql example:DELETE FROM t_order o WHERE o.order = 1)
 </code></pre>
-<p><img src='https://github.com/OpenSharding/shardingsphere-benchmark/blob/master/report/sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
+<p><img src='../sp_raw/select_single_raw.png' alt='select_single_raw' referrerPolicy='no-referrer' /></p>
 <pre><code>Comparative Version:
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: single
-Comparative Mode: Only MaterSlave
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: Only MaterSlave(sql example:INSERT INTO t_order(user_id,status) VALUES(#,#))
 Comparative type: INSERT
 </code></pre>
 <p>&nbsp;</p>

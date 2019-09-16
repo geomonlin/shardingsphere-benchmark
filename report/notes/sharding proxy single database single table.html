@@ -9,7 +9,11 @@
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: Multi table
-Comparative Mode: SingleDataBase And SingleTable(sql example:SELECT o.order_id FROM       					t_order o WHERE order_id = ? AND user_id = ?)
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: SingleDataBase And SingleTable(sql example:SELECT o.order_id FROM   t_order o WHERE order_id = # AND user_id = #)
 Comparative type: SELECT
 </code></pre>
 <p>&nbsp;</p>
@@ -17,7 +21,11 @@ Comparative type: SELECT
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: Multi table
-Comparative Mode: SingleDataBase And SingleTable(sql example:UPDATE t_order o SET 						  o.status = ? WHERE o.order_id = ? AND o.user_id = ?)
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: SingleDataBase And SingleTable(sql example:UPDATE t_order o SET o.status = # WHERE o.order_id = # AND o.user_id = #)
 Comparative type: UPDATE
 </code></pre>
 <p>&nbsp;</p>
@@ -25,7 +33,11 @@ Comparative type: UPDATE
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: Multi table
-Comparative Mode: SingleDataBase And SingleTable(sql example:DELETE FROM t_order o WHERE 				   o.order = ? AND o.user_id = ?)
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: SingleDataBase And SingleTable(sql example:DELETE FROM t_order o WHERE o.order = # AND o.user_id = #)
 Comparative type: DELETE
 </code></pre>
 <p>&nbsp;</p>
@@ -34,7 +46,11 @@ Comparative type: DELETE
 	Mysql: 5.1.42(red curve)
 	ShardingSphere-proxy: 3.0(blue curve) or 4.0(aqua curve)
 Table Number: Multi table
-Comparative Mode: SingleDataBase And SingleTable
+Data Volume: 200w
+Axis:
+	X: (TEST TIMES)/DAY
+	Y: TPS
+Comparative Mode: SingleDataBase And SingleTable(INSERT INTO t_order(user_id,status) VALUES(#,#))
 Comparative type: INSERT
 </code></pre>
 <p>&nbsp;</p>
